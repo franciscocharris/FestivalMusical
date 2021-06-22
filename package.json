@@ -1,10 +1,10 @@
 {
   "name": "festivalmusical",
   "version": "1.0.0",
-  "description": "Aprendiendo SASS y Gulp",
+  "description": "aprendiendo sass y gulp",
   "main": "index.js",
   "scripts": {
-    "test": "git@github.com:franciscocharris/FestivalMusical.git"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -13,19 +13,17 @@
   "keywords": [
     "SASS",
     "Gulp",
-    "Node",
-    "NPM"
+    "Web",
+    "Design"
   ],
-  "author": "Francisco M. Charris C.",
+  "author": "Francisco M. Charris C",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/franciscocharris/FestivalMusical/issues"
   },
   "homepage": "https://github.com/franciscocharris/FestivalMusical#readme",
   "devDependencies": {
-    "dart-sass": "^1.25.0",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0",
-    "node-sass": "^6.0.0"
+    "gulp-sass": "^4.1.0"
   }
 }
