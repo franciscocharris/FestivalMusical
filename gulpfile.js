@@ -8,7 +8,9 @@ const sass = require('gulp-sass');
 function css(  ){
     
     return src('./src/scss/app.scss')
-        .pipe( sass() )
+        .pipe( sass({
+            outputStyle: 'expanded'
+        }) )
         .pipe( dest('./build/css') );
 
 }
@@ -25,7 +27,9 @@ function minificarCss(  ){
 
 function watchArchivos(){
     // observar archivos y ejecutar tarea 
-    watch('./src/scss/app.scss', css);
+    // watch('./src/scss/*.scss', css);
+    // para que lea todos los archivos sin importar la ubicacion
+    watch('./src/scss/**/*.scss', css);
 }
 
 exports.css = css

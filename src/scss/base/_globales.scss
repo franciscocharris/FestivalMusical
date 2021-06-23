@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: $fuentePrincipal;
+    font-size: 1.6rem;
+}
+
+p{
+    font-size: 2rem;
+    color: $negro; 
+}
+
+.contenedor{
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
+h1,h2,h3{
+    margin:0;
+}
+h1 {
+    font-size: 4rem;
+    font-weight: $black;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
+}

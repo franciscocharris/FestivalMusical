@@ -1,0 +1,18 @@
+@mixin telefono{
+    @media (min-width: $telefono) {
+        // para que acepte bloques de contenido
+        @content;
+    }
+}
+@mixin tablet{
+    @media (min-width: $tablet) {
+        // para que acepte bloques de contenido
+        @content;
+    }
+}
+@mixin desktop{
+    @media (min-width: $desktop) {
+        // para que acepte bloques de contenido
+        @content;
+    }
+}
