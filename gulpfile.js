@@ -4,6 +4,7 @@ const { series, src, dest, watch }  = require('gulp');
 // este no nesecita porque esta dependencia solo tiene una funcion
 const sass = require('gulp-sass');
 // sass.compiler = require('');
+const imagemin = require('gulp-imagemin');
 
 function css(  ){
     
@@ -25,6 +26,12 @@ function minificarCss(  ){
 
 }
 
+function imagenes(){
+    return src('src/img/**/*')
+        .pipe( imagemin() )
+        .pipe( dest('./build/img') )
+}
+
 function watchArchivos(){
     // observar archivos y ejecutar tarea 
     // watch('./src/scss/*.scss', css);
@@ -32,9 +39,10 @@ function watchArchivos(){
     watch('./src/scss/**/*.scss', css);
 }
 
-exports.css = css
-exports.minificarCss = minificarCss
-exports.watchArchivos = watchArchivos
+exports.css = css;
+exports.minificarCss = minificarCss;
+exports.imagenes = imagenes;
+exports.watchArchivos = watchArchivos;
 
 // series sirve para ejecutar muchas tareas muchas funciones con una sola llamada
 // exports.tareas = series( css, js);

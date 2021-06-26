@@ -4,7 +4,7 @@
         padding: $separacion / 2 0;
             @include telefono{
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
                 align-items:center;
             }
     }
