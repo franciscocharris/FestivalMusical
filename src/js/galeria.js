@@ -49,7 +49,7 @@ function mostrarImagen(e){
         overlay.remove();
     }
 
-    // mostrar en el hyml
+    // mostrar en el html
     const body = document.querySelector('body');
     body.appendChild(overlay);
     body.classList.add('fijar-body');
